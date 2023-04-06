@@ -23,7 +23,7 @@ jobs:
     - name: Install Dependencies
       run: npm install
     - name: ViteJS
-      run: npm run dev
+      run: npm run build
     - name: Generate key
       run: php artisan key:generate
     - name: Directory Permissions
