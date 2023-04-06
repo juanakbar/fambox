@@ -12,7 +12,7 @@
   <a href="https://github.com/juanakbar/fambox/stargazers">
     <img src="https://img.shields.io/github/stars/juanakbar/fambox?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=302D41"/>
   </a>
-  <a href="https://github.com/juankbar/fambox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/juanakbar/fambox?color=%2361afef&style=for-the-badge"></a>
+  <a href="https://github.com/juanakbar/fambox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/juanakbar/fambox?color=%2361afef&style=for-the-badge"></a>
   <a href="https://github.com/juanakbar/fambox/issues">
   <img
         alt="Issues"
