@@ -16,23 +16,34 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100">
+    <div class="bg-white">
         @include('layouts.navigation')
 
         <!-- Page Heading -->
         @if (isset($header))
             <header class="bg-white shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
+                    {{ $header ?? null }}
                 </div>
             </header>
         @endif
 
         <!-- Page Content -->
-        <main>
-            {{ $slot }}
-        </main>
+        <div class="sm:mt-36 mt-0">
+            <div class=" mx-auto">
+                <div class="text-gray-900">
+                    <div class="lg:flex lg:-mx-2">
+                        @include('layouts.sidebar')
+                        <main class="w-full h-screen">
+                            {{ $slot }}
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+    @stack('scripts')
 </body>
 
 </html>

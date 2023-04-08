@@ -17,7 +17,7 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): View
     {
-        return view('auth.login');
+        return view("auth.login");
     }
 
     /**
@@ -28,8 +28,10 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-
-        return redirect()->intended(RouteServiceProvider::HOME);
+        if (Auth::user()->hasRole("superadmin")) {
+            return redirect()->intended(RouteServiceProvider::HOME);
+        }
+        return redirect()->intended(RouteServiceProvider::WELCOME);
     }
 
     /**
@@ -37,12 +39,12 @@ class AuthenticatedSessionController extends Controller
      */
     public function destroy(Request $request): RedirectResponse
     {
-        Auth::guard('web')->logout();
+        Auth::guard("web")->logout();
 
         $request->session()->invalidate();
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect("/");
     }
 }

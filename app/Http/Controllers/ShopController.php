@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Shop;
-use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ShopController extends Controller
 {
@@ -12,56 +11,69 @@ class ShopController extends Controller
      */
     public function index()
     {
-        return view('shops.index', [
-//            'shops' => Shop::all(),
+        return view("shops.index", [
+            "products" => Product::latest()->paginate(10),
         ]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Shop $shop)
+    public function show(Product $product)
     {
-        //
+        return view("shops.show", [
+            "product" => $product,
+        ]);
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Add to cart
      */
-    public function edit(Shop $shop)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Shop $shop)
+    public function addToCart(Product $product)
     {
-        //
-    }
+        $cart = session()->get("cart");
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Shop $shop)
-    {
-        //
+        // if cart is empty then this the first product
+        if (!$cart) {
+            $cart = [
+                $product->id => [
+                    "name" => $product->name,
+                    "quantity" => 1,
+                    "price" => $product->price,
+                    "photo" => $product->photo,
+                ],
+            ];
+
+            session()->put("cart", $cart);
+
+            return redirect()
+                ->back()
+                ->with("success", "Product added to cart successfully!");
+        }
+
+        // if cart not empty then check if this product exist then increment quantity
+        if (isset($cart[$product->id])) {
+            $cart[$product->id]["quantity"]++;
+
+            session()->put("cart", $cart);
+
+            return redirect()
+                ->back()
+                ->with("success", "Product added to cart successfully!");
+        }
+
+        // if item not exist in cart then add to cart with quantity = 1
+        $cart[$product->id] = [
+            "name" => $product->name,
+            "quantity" => 1,
+            "price" => $product->price,
+        ];
+
+        session()->put("cart", $cart);
+
+        return redirect()
+            ->back()
+            ->with("success", "Product added to cart successfully!");
     }
 }

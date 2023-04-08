@@ -10,7 +10,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    @stack('styles')
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -25,6 +25,7 @@
 
     @include('layouts.modal.modal-login')
     @include('layouts.modal.modal-register')
+    @stack('js')
 </body>
 
 </html>
