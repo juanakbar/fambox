@@ -1,6 +1,7 @@
 @php use Carbon\Carbon; @endphp
 <x-guest-layout>
-    <div class="w-full bg-cover bg-center" style="height:32rem; background-image: url({{ asset('img/header.png') }});">
+    <div class="w-full bg-cover bg-center hidden sm:block"
+        style="height:32rem; background-image: url({{ asset('img/header.png') }});">
         <div class="flex justify-center h-full sm:mt-32 mt-0">
             <div class="h-[325px] w-[510px]">
                 <div class="bg-gradient-to-b from-[#C6D16680]/90 to-[#C6D16680]/15 w-full">
@@ -28,7 +29,7 @@
         <div class="mx-auto flex justify-center items-center">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                 <div class="relative block overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat"
-                     style="width: 344px; height: 254px; background-image: url({{ asset('img/discover1.png') }});">
+                    style="width: 344px; height: 254px; background-image: url({{ asset('img/discover1.png') }});">
                     <div class="absolute inset-0 bg-[#C6D16680]/25"></div>
 
                     <div class="relative flex items-start justify-between p-4 sm:p-6 lg:p-8">
@@ -36,20 +37,20 @@
                             <h3 class="mb-[10px] text-5xl font-bold sm:text-4xl">DISCOVER VARIOUS BLOGS</h3>
 
                             <a href=""
-                               class="mt-[30px] text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                class="mt-[30px] text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Browse Now
                                 <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor"
-                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
-                                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                          clip-rule="evenodd"></path>
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="relative block overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat"
-                     style="width: 344px; height: 254px; background-image: url({{ asset('img/discover2.png') }});">
+                    style="width: 344px; height: 254px; background-image: url({{ asset('img/discover2.png') }});">
                     <div class="absolute inset-0 bg-[#C6D16680]/25"></div>
 
                     <div class="relative flex items-start justify-between p-4 sm:p-6 lg:p-8">
@@ -57,20 +58,20 @@
                             <h3 class="mb-[10px] text-5xl font-bold sm:text-4xl">DISCOVER VARIOUS BLOGS</h3>
 
                             <a href=""
-                               class="mt-[30px] text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                class="mt-[30px] text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Browse Now
                                 <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor"
-                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
-                                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                          clip-rule="evenodd"></path>
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="relative block overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat"
-                     style="width: 344px; height: 254px; background-image: url({{ asset('img/discover3.png') }});">
+                    style="width: 344px; height: 254px; background-image: url({{ asset('img/discover3.png') }});">
                     <div class="absolute inset-0 bg-[#C6D16680]/25"></div>
 
                     <div class="relative flex items-start justify-between p-4 sm:p-6 lg:p-8">
@@ -78,20 +79,20 @@
                             <h3 class="mb-[10px] text-5xl font-bold sm:text-4xl">DISCOVER VARIOUS BLOGS</h3>
 
                             <a href=""
-                               class="mt-[30px] text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                class="mt-[30px] text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Browse Now
                                 <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor"
-                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
-                                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                          clip-rule="evenodd"></path>
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="relative block overflow-hidden rounded-xl bg-cover bg-center bg-no-repeat"
-                     style="width: 344px; height: 254px; background-image: url({{ asset('img/discover4.png') }});">
+                    style="width: 344px; height: 254px; background-image: url({{ asset('img/discover4.png') }});">
                     <div class="absolute inset-0 bg-[#C6D16680]/25"></div>
 
                     <div class="relative flex items-start justify-between p-4 sm:p-6 lg:p-8">
@@ -99,13 +100,13 @@
                             <h3 class="mb-[10px] text-5xl font-bold sm:text-4xl">DISCOVER VARIOUS BLOGS</h3>
 
                             <a href=""
-                               class="mt-[30px] text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                class="mt-[30px] text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Browse Now
                                 <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor"
-                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
-                                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                          clip-rule="evenodd"></path>
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
                             </a>
                         </div>
@@ -123,9 +124,9 @@
                         <div class="flex justify-between items-center gap-3">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                     class="icon icon-tabler icon-tabler-star-filled text-[#00F60A] w-4 h-4 sm:w-[39px] h-[37px]"
-                                     width="39" height="37" viewBox="0 0 24 24" stroke-width="2"
-                                     stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    class="icon icon-tabler icon-tabler-star-filled text-[#00F60A] w-4 h-4 sm:w-[39px] h-[37px]"
+                                    width="39" height="37" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path
                                         d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"
@@ -142,7 +143,7 @@
                         <div class="text-center bg-white row-start-1 sm:row-end-6">
                             <a href="#" class="group relative block bg-black">
                                 <img alt="Developer" src="{{ asset('img/disc1.png') }}"
-                                     class="absolute inset-0 h-full w-full object-cover opacity-75  transition-opacity group-hover:opacity-50"/>
+                                    class="absolute inset-0 h-full w-full object-cover opacity-75  transition-opacity group-hover:opacity-50" />
 
                                 <div class="relative p-10 sm:p-6 lg:py-32">
                                     <p class="text-[32px] font-medium uppercase tracking-widest text-[#E9FF26]">
@@ -161,7 +162,7 @@
                         </div>
                         {{-- Product --}}
                         <a class="relative flex items-center justify-center rounded-xl border border-gray-100 p-4 sm:p-6 lg:p-8 border-gray-300"
-                           href="#">
+                            href="#">
                             <div class="pt-4 text-gray-500">
                                 <div class="flex items-center justify-center">
                                     <img src="{{ asset('img/product1.png') }}" alt="Product">
@@ -175,7 +176,7 @@
                                 </h3>
                                 <div class="flex items-center mt-2.5 justify-center">
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>First
                                             star</title>
                                         <path
@@ -183,7 +184,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Second
                                             star</title>
                                         <path
@@ -191,7 +192,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Third
                                             star</title>
                                         <path
@@ -199,7 +200,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fourth
                                             star</title>
                                         <path
@@ -207,7 +208,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fifth
                                             star</title>
                                         <path
@@ -232,7 +233,7 @@
                                 </h3>
                                 <div class="flex items-center mt-2.5 justify-center">
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>First
                                             star</title>
                                         <path
@@ -240,7 +241,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Second
                                             star</title>
                                         <path
@@ -248,7 +249,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Third
                                             star</title>
                                         <path
@@ -256,7 +257,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fourth
                                             star</title>
                                         <path
@@ -264,7 +265,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fifth
                                             star</title>
                                         <path
@@ -289,7 +290,7 @@
                                 </h3>
                                 <div class="flex items-center mt-2.5 justify-center">
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>First
                                             star</title>
                                         <path
@@ -297,7 +298,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Second
                                             star</title>
                                         <path
@@ -305,7 +306,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Third
                                             star</title>
                                         <path
@@ -313,7 +314,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fourth
                                             star</title>
                                         <path
@@ -321,7 +322,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fifth
                                             star</title>
                                         <path
@@ -346,10 +347,10 @@
                         <div class="flex justify-between items-center gap-3">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                     class="icon icon-tabler icon-tabler-eye text-[#00F60A] w-4 h-4 sm:w-[39px] h-[37px]"
-                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                                     stroke="currentColor" fill="none" stroke-linecap="round"
-                                     stroke-linejoin="round">
+                                    class="icon icon-tabler icon-tabler-eye text-[#00F60A] w-4 h-4 sm:w-[39px] h-[37px]"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
                                     <path
@@ -368,7 +369,7 @@
                         <div class="text-center bg-white row-start-1 sm:row-end-6">
                             <a href="#" class="group relative block bg-black">
                                 <img alt="Developer" src="{{ asset('img/disc1.png') }}"
-                                     class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"/>
+                                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
 
                                 <div class="relative p-10 sm:p-6 lg:py-32">
                                     <p class="text-[32px] font-medium uppercase tracking-widest text-[#E9FF26]">
@@ -387,7 +388,7 @@
                         </div>
                         {{-- Product --}}
                         <a class="relative flex items-center justify-center rounded-xl border border-gray-100 p-4 sm:p-6 lg:p-8 border-gray-300"
-                           href="#">
+                            href="#">
                             <div class="pt-4 text-gray-500">
                                 <div class="flex items-center justify-center">
                                     <img src="{{ asset('img/product1.png') }}" alt="Product">
@@ -401,7 +402,7 @@
                                 </h3>
                                 <div class="flex items-center mt-2.5 justify-center">
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>First
                                             star</title>
                                         <path
@@ -409,7 +410,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Second
                                             star</title>
                                         <path
@@ -417,7 +418,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Third
                                             star</title>
                                         <path
@@ -425,7 +426,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fourth
                                             star</title>
                                         <path
@@ -433,7 +434,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fifth
                                             star</title>
                                         <path
@@ -444,7 +445,7 @@
                             </div>
                         </a>
                         <a class="relative flex items-center justify-center rounded-xl border border-gray-100 p-4 sm:p-6 lg:p-8 border-gray-300"
-                           href="#">
+                            href="#">
                             <div class="pt-4 text-gray-500">
                                 <div class="flex items-center justify-center">
                                     <img src="{{ asset('img/product1.png') }}" alt="Product">
@@ -458,7 +459,7 @@
                                 </h3>
                                 <div class="flex items-center mt-2.5 justify-center">
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>First
                                             star</title>
                                         <path
@@ -466,7 +467,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Second
                                             star</title>
                                         <path
@@ -474,7 +475,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Third
                                             star</title>
                                         <path
@@ -482,7 +483,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fourth
                                             star</title>
                                         <path
@@ -490,7 +491,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fifth
                                             star</title>
                                         <path
@@ -501,7 +502,7 @@
                             </div>
                         </a>
                         <a class="relative flex items-center justify-center rounded-xl border border-gray-100 p-4 sm:p-6 lg:p-8 border-gray-300"
-                           href="#">
+                            href="#">
                             <div class="pt-4 text-gray-500">
                                 <div class="flex items-center justify-center">
                                     <img src="{{ asset('img/product1.png') }}" alt="Product">
@@ -515,7 +516,7 @@
                                 </h3>
                                 <div class="flex items-center mt-2.5 justify-center">
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>First
                                             star</title>
                                         <path
@@ -523,7 +524,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Second
                                             star</title>
                                         <path
@@ -531,7 +532,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Third
                                             star</title>
                                         <path
@@ -539,7 +540,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fourth
                                             star</title>
                                         <path
@@ -547,7 +548,7 @@
                                         </path>
                                     </svg>
                                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-300" fill="currentColor"
-                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <title>Fifth
                                             star</title>
                                         <path
@@ -572,10 +573,10 @@
                         <div class="flex justify-between items-center gap-3">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                     class="icon icon-tabler icon-tabler-article text-[#00F60A] w-4 h-4 sm:w-[39px] h-[37px]"
-                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                                     stroke="currentColor" fill="none" stroke-linecap="round"
-                                     stroke-linejoin="round">
+                                    class="icon icon-tabler icon-tabler-article text-[#00F60A] w-4 h-4 sm:w-[39px] h-[37px]"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path
                                         d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z">
@@ -593,21 +594,21 @@
                     </div>
                     <div class="border-t border-gray-900 mb-5"></div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
                     <div class="max-w-sm p-6 bg-white">
 
                         <img class="h-auto max-w-lg rounded-lg" src="{{ asset('img/blog1.png') }}"
-                             alt="image description">
+                            alt="image description">
                         <div class="flex justify-start items-center mt-2 text-xs text-gray-500">
                             <div class="flex justify-between items-center gap-3">
                                 <div class="flex justify-between gap-2 items-center">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg"
-                                             class="icon icon-tabler icon-tabler-calendar-event w-4 h-4" width="24"
-                                             height="24" viewBox="0 0 24 24" stroke-width="2"
-                                             stroke="currentColor" fill="none" stroke-linecap="round"
-                                             stroke-linejoin="round">
+                                            class="icon icon-tabler icon-tabler-calendar-event w-4 h-4" width="24"
+                                            height="24" viewBox="0 0 24 24" stroke-width="2"
+                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path
                                                 d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
@@ -625,10 +626,10 @@
                                 <div class="flex justify-between gap-2 items-center">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg"
-                                             class="icon icon-tabler icon-tabler-message w-4 h-4" width="24"
-                                             height="24" viewBox="0 0 24 24" stroke-width="2"
-                                             stroke="currentColor" fill="none" stroke-linecap="round"
-                                             stroke-linejoin="round">
+                                            class="icon icon-tabler icon-tabler-message w-4 h-4" width="24"
+                                            height="24" viewBox="0 0 24 24" stroke-width="2"
+                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M8 9h8"></path>
                                             <path d="M8 13h6"></path>
@@ -649,29 +650,29 @@
                         </a>
 
                         <a href="#"
-                           class="text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            class="text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Baca
                             <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
-                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
-                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                      clip-rule="evenodd"></path>
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
                             </svg>
                         </a>
                     </div>
                     <div class="max-w-sm p-6 bg-white">
 
                         <img class="h-auto max-w-lg rounded-lg" src="{{ asset('img/blog1.png') }}"
-                             alt="image description">
+                            alt="image description">
                         <div class="flex justify-start items-center mt-2 text-xs text-gray-500">
                             <div class="flex justify-between items-center gap-3">
                                 <div class="flex justify-between gap-2 items-center">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg"
-                                             class="icon icon-tabler icon-tabler-calendar-event w-4 h-4" width="24"
-                                             height="24" viewBox="0 0 24 24" stroke-width="2"
-                                             stroke="currentColor" fill="none" stroke-linecap="round"
-                                             stroke-linejoin="round">
+                                            class="icon icon-tabler icon-tabler-calendar-event w-4 h-4" width="24"
+                                            height="24" viewBox="0 0 24 24" stroke-width="2"
+                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path
                                                 d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
@@ -689,10 +690,10 @@
                                 <div class="flex justify-between gap-2 items-center">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg"
-                                             class="icon icon-tabler icon-tabler-message w-4 h-4" width="24"
-                                             height="24" viewBox="0 0 24 24" stroke-width="2"
-                                             stroke="currentColor" fill="none" stroke-linecap="round"
-                                             stroke-linejoin="round">
+                                            class="icon icon-tabler icon-tabler-message w-4 h-4" width="24"
+                                            height="24" viewBox="0 0 24 24" stroke-width="2"
+                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M8 9h8"></path>
                                             <path d="M8 13h6"></path>
@@ -713,29 +714,29 @@
                         </a>
 
                         <a href="#"
-                           class="text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            class="text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Baca
                             <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
-                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
-                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                      clip-rule="evenodd"></path>
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
                             </svg>
                         </a>
                     </div>
                     <div class="max-w-sm p-6 bg-white">
 
                         <img class="h-auto max-w-lg rounded-lg" src="{{ asset('img/blog1.png') }}"
-                             alt="image description">
+                            alt="image description">
                         <div class="flex justify-start items-center mt-2 text-xs text-gray-500">
                             <div class="flex justify-between items-center gap-3">
                                 <div class="flex justify-between gap-2 items-center">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg"
-                                             class="icon icon-tabler icon-tabler-calendar-event w-4 h-4" width="24"
-                                             height="24" viewBox="0 0 24 24" stroke-width="2"
-                                             stroke="currentColor" fill="none" stroke-linecap="round"
-                                             stroke-linejoin="round">
+                                            class="icon icon-tabler icon-tabler-calendar-event w-4 h-4" width="24"
+                                            height="24" viewBox="0 0 24 24" stroke-width="2"
+                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path
                                                 d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
@@ -753,10 +754,10 @@
                                 <div class="flex justify-between gap-2 items-center">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg"
-                                             class="icon icon-tabler icon-tabler-message w-4 h-4" width="24"
-                                             height="24" viewBox="0 0 24 24" stroke-width="2"
-                                             stroke="currentColor" fill="none" stroke-linecap="round"
-                                             stroke-linejoin="round">
+                                            class="icon icon-tabler icon-tabler-message w-4 h-4" width="24"
+                                            height="24" viewBox="0 0 24 24" stroke-width="2"
+                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M8 9h8"></path>
                                             <path d="M8 13h6"></path>
@@ -777,13 +778,13 @@
                         </a>
 
                         <a href="#"
-                           class="text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            class="text-white bg-[#C6D16680]/100 hover:bg-[#C6D16680]/80 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Baca
                             <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
-                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
-                                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                      clip-rule="evenodd"></path>
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
                             </svg>
                         </a>
                     </div>

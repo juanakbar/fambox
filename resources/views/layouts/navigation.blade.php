@@ -1,7 +1,7 @@
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-900 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="{{ route('welcome') }}" class="flex items-center">
-            <img src="{{ asset('img/logo.png') }}" class="h-12 mr-3" alt="Logo">
+            <img src="{{ asset('img/logo.png') }}" class="sm:h-12 mr-3 h-8" alt="Logo">
         </a>
         <div class="flex md:order-2 gap-3">
             @auth()
@@ -32,12 +32,13 @@
 
                         <!-- Dropdown menu -->
                         <div id="dropdownDivider"
-                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            class="z-50 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
                                 aria-labelledby="dropdownDividerButton">
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                    <a href="{{ route('cart.index') }}"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Your
+                                        Cart</a>
                                 </li>
                                 <li>
                                     <a href="#"
@@ -48,7 +49,7 @@
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
                                 </li>
                             </ul>
-                            <div class="py-2">
+                            <div class="py-1">
                                 <form action="{{ route('logout') }}" method="post">
                                     @csrf
                                     <button type="submit"
@@ -94,11 +95,6 @@
                     </x-nav-link>
                 </li>
                 <li>
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        Dashboard
-                    </x-nav-link>
-                </li>
-                <li>
                     <x-nav-link :href="route('shop.index')" :active="request()->routeIs('shop.*')">
                         Shop
                     </x-nav-link>
@@ -120,8 +116,9 @@
                             class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                    <a href="{{ route('cart.index') }}"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Your
+                                        Cart</a>
                                 </li>
                                 <li>
                                     <a href="#"
@@ -145,7 +142,7 @@
                     </li>
                 @else
                     <button data-modal-target="authentication-modal-login" data-modal-toggle="authentication-modal-login"
-                        class="sm:hidden border border-gray-900 bg-[#C6D166] text-black disabled:opacity-50 transition duration-300 hover:enabled:border-slate-300 hover:enabled:bg-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:shadow dark:hover:enabled:border-slate-600 dark:hover:enabled:bg-slate-700 py-2 inline-block px-4 rounded-lg font-medium fade text-sm">
+                        class="mt-3 sm:hidden border border-gray-900 bg-[#C6D166] text-black disabled:opacity-50 transition duration-300 hover:enabled:border-slate-300 hover:enabled:bg-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-white dark:shadow dark:hover:enabled:border-slate-600 dark:hover:enabled:bg-slate-700 py-2 inline-block px-4 rounded-lg font-medium fade text-sm">
                         Masuk
                     </button>
                 @endauth
@@ -169,7 +166,7 @@
                         <input type="search" id="default-search"
                             class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         <button type="submit"
-                            class="text-white absolute right-2.5 bottom-2.5 bg-[#C6D166] hover:bg-[#C6D16650]/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            class="text-white absolute right-2.5 bottom-2.5 bg-[#C6D166] hover:bg-[#C6D16650]/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">
                             Search
                         </button>
                     </div>
